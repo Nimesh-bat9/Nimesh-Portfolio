@@ -1,0 +1,309 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffffff, 0%, #f4f4f4 50%, #dedede 100%);
+    color: #222;
+    max-width: 900px;
+    margin:0 auto;
+    padding: 40px;
+    }
+    h3 {
+        font-size:24px;
+        margin-bottom:5px;
+        color: #333;
+        margin-top:0;
+        }
+
+        .project h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #222;
+        }
+
+        .project p {
+            color: #555;
+            margin-bottom: 0;
+        }
+
+        p{font-size:16px;
+        line-height:1.6;
+        margin-top:0;
+    }
+
+    .project {
+        background-color:rgba(255, 255, 255, 0.82);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        padding: 25px;
+        margin-bottom: 25px;
+        border-radius: 12px;
+        box-shadow:0 4px 10px rgba(0,0,0,0.18);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    }
+
+    h1{
+        font-size:48px;
+        margin-bottom:15px;
+        color: white;
+    }
+
+    h1 + p {
+        font-size:22px;
+        font-weight:bold;
+        color: white;
+        margin-bottom: 8px;
+    }
+
+    h1 + p + p {
+        font-size:18px;
+        margin-bottom:40px;
+        color: white;
+    }
+
+    h2{
+        font-size:32px;
+        margin-top:40px;
+        margin-bottom:15px;
+    }
+
+    h2 + p {
+        font-size:17px;
+        line-height:1.7;
+        max-width:750px;
+    }
+
+    .intro {
+        background-color: #222;
+        color: white;
+        padding: 40px 40px;
+        border-radius: 15px;
+        margin-bottom: 60px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        overflow: hidden;
+    }
+
+    .intro {
+        position: relative;
+    }
+
+    .intro::before {
+        content:"";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: rgba(100, 140, 180, 0.18);
+        border-radius: 50%;
+        top: -150px;
+        right: -100px;
+        filter: blur(60px);
+    }
+
+    .intro::after {
+        content:"";
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background: rgba(140, 150, 170, 0.12);
+        border-radius: 50%;
+        bottom: -130px;
+        left: -80px;
+        filter: blur(60px);
+    }
+
+    .intro h1 {
+        font-size: 52px;
+        margin-bottom: 15px;
+        animation: fadeUp 1s ease-out;
+    }
+
+    .intro p:first-of-type {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        animation: fadeUp 1s ease-out 0.5s both;
+    }
+
+    .intro p:last-of-type {
+        font-size: 17px;
+        color: #ddd;
+        animation: fadeUp 1s ease-out 1s both;
+    }
+
+    @keyframes fadeUp {
+      from {
+         opacity: 0;
+         transform: translateY(20px);
+      }
+
+      to {
+         opacity: 1;
+         transform: translateY(0);
+      }
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap:25px;
+     }
+
+     nav {
+        display:flex;
+        justify-content:flex-end;
+        gap:25px;
+        margin-bottom:30px;
+        padding: 15px 20px;
+     }
+
+     nav a {
+        text-decoration:none;
+        color: #222;
+        font-weight:bold;
+     }
+
+     nav a:hover {
+        color: #666;
+     }
+
+     .about {
+        background-color: white;
+        padding: 30px;
+        margin-bottom: 60px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+     }
+
+     .about h2 {
+        margin-top: 0;
+     }
+
+     .about p {
+        margin-bottom: 0;
+     }
+
+     .video-placeholder {
+        height: 200px;
+        background-color: #ddd;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        font-size: 18px;
+        color: #555;
+     }
+
+     .project video {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+     }
+
+     @media (max-width: 700px) {
+        .projects {
+            grid-template-columns: 1fr;
+        }
+     }
+
+     .skills {
+        font-size: 14px;
+        color: #777;
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-weight: bold;
+     }
+
+     .project h3 a {
+        color: #222;
+        text-decoration: none;
+     }
+
+     .project h3 a:hover {
+        color: #666;
+     }
+
+     .skills-section {
+        margin-bottom: 60px;
+     }
+
+     .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+     }
+
+     .skills-list span {
+        background-color: #222;
+        color: white;
+        padding: 10px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+     }
+
+     .skills-section h2 {
+        margin-bottom: 20px;
+     }
+
+     .contact {
+        background-color: #222;
+        color: white;
+        padding: 50px 40px;
+        margin-top: 60px;
+        border-radius: 15px;
+        text-align: centre;
+     }
+
+     .contact h2 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 32px;
+     }
+
+     .contact p {
+        margin-bottom: 15px;
+        color: #ddd;
+     }
+
+     .contact a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+     }
+
+     .contact a:hover {
+        color: #4da6ff;
+        text-decoration: underline;
+     }
+
+     .about {
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 40px;
+        text-align: centre;
+     }
+
+     .about h2 {
+        margin-bottom: 20px;
+        font-size: 32px;
+        color: #222;
+     }
+
+     .about p {
+        color: #333;
+        line-height: 1.7;
+        font-size: 17px
+     }
+
+     body {
+        background:
+        radial-gradient(circle at 15% 15%, rgba(90, 110, 130, 0.28),transparent 35%), radial-gradient(circle at 85% 75%, rgba(70, 90, 115, 0.24), transparent 40%), linear-gradient(135deg, #ffffff 0%, #f4f4f4 50%, #dedede 100%);
+     }
