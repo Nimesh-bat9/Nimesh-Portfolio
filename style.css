@@ -307,3 +307,59 @@ body {
         background:
         radial-gradient(circle at 15% 15%, rgba(90, 110, 130, 0.28),transparent 35%), radial-gradient(circle at 85% 75%, rgba(70, 90, 115, 0.24), transparent 40%), linear-gradient(135deg, #ffffff 0%, #f4f4f4 50%, #dedede 100%);
      }
+
+      .magic-particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.magic-particles::before,
+.magic-particles::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background:  #ffd86b;
+
+    filter: drop-shadow(0 0 5px #ffb52e);
+
+    box-shadow:
+    10vw 20vh 0 0 #ffd86b,
+    25vw 70vh 0 0 #ffd86b,
+    40vw 35vh 0 0 #ffd86b,
+    55vw 80vh 0 0 #ffd86b,
+    70vw 25vh 0 0 #ffd86b,
+    85vw 65vh 0 0 #ffd86b,
+    95vw 40vh 0 0 #ffd86b;
+    animation: magicFloat 8s ease-in-out infinite;
+    opacity: 0.5;
+}
+
+.magic-particles::after {
+    animation-delay: -3s;
+    animation-duration: 11s;
+    opacity: 0.35;
+}
+
+@keyframes magicFloat {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.5;
+    }
+    70% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+}
