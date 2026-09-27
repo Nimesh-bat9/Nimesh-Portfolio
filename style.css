@@ -363,3 +363,18 @@ body {
         opacity: 0;
     }
 }
+
+.portfolio-note {
+max-width: 850px;
+margin: 25px auto 40px;
+padding: 20px 25px;
+border: 1px solid rgba(255, 216, 107, 0.35);
+border-radius: 16px;
+background: rgba(255, 255, 255, 0.55);
+text-align: center;
+line-height: 1.7;
+}
+
+.portfolio-note strong {
+display: block;
+}
